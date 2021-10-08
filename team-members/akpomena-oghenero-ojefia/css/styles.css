@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  color: #40514e;
+}
+
+h1 {
+  margin: 0 auto 0;
+  font-size: 5.625rem;
+  color: #66bfbf;
+  font-family: "Long Cang", cursive;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-family: "Teko", sans-serif;
+}
+
+h3 {
+  color: #11999e;
+  font-family: "Teko", sans-serif;
+}
+
+p {
+  line-height: 1.5;
+  font-family: 'Boogaloo', cursive;
+}
+
+a {
+  color: #11999e;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  width: 5%;
+  border-width: 8px;
+  border-color: #eaf6f6;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.top-container {
+  background-color: #eaf6f6;
+  padding-top: 150px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.bottom-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #66bfbf;
+  margin-top: 20px;
+}
+
+.heading {
+  width: 25ch;
+  margin: auto;
+}
+
+.subtitle {
+  width: 0ch;
+  text-align: center;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(22) 1s infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 14ch;
+  }
+}
+
+.site-pictures {
+  height: 100px;
+  width: 200px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  top: 190px;
+
+  animation: cloud1 5s linear 2s infinite alternate;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 20px;
+
+  animation: cloud2 5s linear 2s infinite alternate;
+}
+
+@keyframes cloud1 {
+  from {
+    left: 25px;
+  }
+  to {
+    left: 175px;
+  }
+}
+
+@keyframes cloud2 {
+  from {
+    right: 250px;
+  }
+  to {
+    right: 50px;
+  }
+}
+
+.skill-row {
+  margin: 100px auto;
+  text-align: left;
+  width: 50%;
+  line-height: 2;
+}
+
+.game {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.programming {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.mountain {
+  height: 300px;
+  width: 600px;
+}
+
+.bottom-text {
+  color: #eaf6f6;
+}
+
+.footer-link {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Teko", sans-serif;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #eaf6f6;
+}
+
+.profile-pic {
+  height: 200px;
+}
+
+.btn {
+  background: #3d94f6;
+  background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: linear-gradient(to bottom, #3d94f6, #1e62d0);
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 5px;
+  box-shadow: 1px 1px 20px 0px #000000;
+  -webkit-box-shadow: 1px 1px 20px 0px #000000;
+  -moz-box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337fed 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  border: solid #337fed 1px;
+  background: #1e62d0;
+  background-image: -webkit-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -moz-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -ms-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -o-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: linear-gradient(to bottom, #1e62d0, #3d94f6);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 1028px) {
+  .skill-row img {
+    height: 10vh;
+    width: fit-content;
+    align-items: center;
+  }
+
+  .game {
+    width: 100%;
+    float: none;
+    margin-right: 30px;
+  }
+
+  .programming {
+    width: 100%;
+    float: none;
+    margin-left: 30px;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 25px;
+  }
+
+  @keyframes cloud2 {
+    from {
+      right: 75px;
+    }
+    to {
+      right: 25px;
+    }
+  }
+
+  @keyframes cloud1 {
+    from {
+      left: 25px;
+    }
+    to {
+      left: 75px;
+    }
+  }
+}
