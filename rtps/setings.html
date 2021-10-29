@@ -18,10 +18,70 @@
                 <ul id="nav-ul"></ul>
             </nav>
         </aside>
-        <main>
-            <form>
-                <input type="name">
-            </form>
+        <main class="setting">
+            <h1>Settings</h1>
+            <div class="wrapper">
+                <section class="section-one">
+                    <form action="javascript:void(0)">
+                        <label>Server IP
+                            <input type="text" name="serverIP">
+                        </label>
+                        <label>Department
+                            <select name="department" id="department">
+                                <option value="cmp">Computer Engineering</option>
+                                <option value="prd">Production Engineering</option>
+                            </select>
+                        </label>
+                        <label>Session
+                            <select name="session" id="session">
+                                <option value="2018/2019">2018/2019</option>
+                                <option value="2019/2020">2019/2020</option>
+                            </select>
+                        </label>
+                        <input class="submit-form" type="submit" value="ADD">
+                    </form>
+                    <div class="active-status">
+                        <div class="status">
+                            <h2>Online</h2>
+                            <p>Connection Status</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-two">
+                    <form action="javascript:void(0)">
+                        <label>Font
+                            <input type="text" name="font">
+                        </label>
+                        <label>Color
+                            <select name="color" id="color">
+                                <option value="light">Light</option>
+                                <option value="dark">Dark</option>
+                            </select>
+                        </label>
+                        <label>Resolution
+                            <select name="resolution" id="resolution">
+                                <option value="1360 x 768">1360 x 768</option>
+                                <option value="1280 x 768">1280 x 768</option>
+                                <option value="1280 x 720 (Recommended)">1280 x 720 (Recommended)</option>
+                                <option value="1280 x 600">1280 x 600</option>
+                                <option value="1024 x 600 (Not recommended)">1024 x 600 (Not recommended)</option>
+                            </select>
+                        </label>
+                    </form>
+                </section>
+                <section class="section-three">
+                    <div class="rect"></div>
+                    <form action="javascript:void(0)">
+                        <label>
+                            <input type="text" name="coursename">
+                        </label>
+                        <input class="submit-form" type="submit" value="ADD NEW COURSE">
+                    </form>
+                </section>
+                <section class="section-four">
+                    Four
+                </section>
+            </div>
         </main>
     </body>
 

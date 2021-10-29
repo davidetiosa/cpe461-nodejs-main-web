@@ -1,10 +1,10 @@
 const navigation = [
     {
-        link: "/dashboard.html",
-        name: "Dashboard"
+        link: "/index.html",
+        name: "Home"
     },
     {
-        link: "/index.html",
+        link: "/user.html",
         name: "User"
     },
     {
@@ -25,14 +25,15 @@ const navUl = document.getElementById("nav-ul")
 const filename = window.location.pathname
 
 function setActiveClass(link) {
-    if (link === filename) return `class="active"`
+    if (link === filename) return `li class="active"`
+    return "li"
 }
 
 let element = ""
 
 for (let i = 0; i < navigation.length; i++) {
     element += `
-    <li ${setActiveClass(navigation[i].link)}>
+    <${setActiveClass(navigation[i].link)}>
         <a href="${navigation[i].link}">${navigation[i].name}</a>
     </li>`
 }
