@@ -1,6 +1,6 @@
 const navigation = [
     {
-        link: "index.html",
+        link: window.location.origin,
         name: "Home"
     },
     {
@@ -23,8 +23,7 @@ const navigation = [
 
 const navUl = document.getElementById("nav-ul")
 const url = window.location.pathname
-const filename = url.substring(url.lastIndexOf('/') + 1)
-console.log(filename)
+let filename = url.substring(url.lastIndexOf('/') + 1)
 
 function setActiveClass(link) {
     if (link === filename) return `li class="active"`
