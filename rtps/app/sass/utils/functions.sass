@@ -1,0 +1,23 @@
+@use 'sass:math'
+  
+//px to em conversion fnction
+// $browser-context was declared in _defaults.sass
+
+@function em($pixels, $context: 16) 
+  @if (unitless($pixels)) 
+    $pixels: $pixels * 1px
+
+  @if (unitless($context)) 
+    $context: $context * 1px
+
+  @return (math.div($pixels, $context)) * 1em
+
+//px to rem conversion function
+@function rem($pixels, $context: 16) 
+  @if (unitless($pixels)) 
+    $pixels: $pixels * 1px
+
+  @if (unitless($context)) 
+    $context: $context * 1px
+
+  @return (math.div($pixels, $context)) * 1rem
