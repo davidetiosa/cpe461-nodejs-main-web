@@ -1,2 +1,28 @@
 @use 'globals'
 @use 'components'
+
+body
+    width: 100%
+    display: grid
+    grid-template-columns: 240px 1fr
+
+    aside
+        background-color: hsl(208, 21%, 18%)
+
+        nav
+
+            ul li
+                &.active a
+                    background-color: hsl(210, 30%, 29%)
+                    border-left: 6px solid hsl(348, 83%, 47%)
+
+            a
+                color: #fff
+                display: block
+                padding: 1em 2em
+
+            & a:hover
+                background-color: var(--gray-dark)
+
+    main
+        background-color: hsl(330, 2%, 16%)
