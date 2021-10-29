@@ -1,28 +1,30 @@
 const navigation = [
     {
-        link: "/index.html",
+        link: "index.html",
         name: "Home"
     },
     {
-        link: "/user.html",
+        link: "user.html",
         name: "User"
     },
     {
-        link: "/setings.html",
+        link: "setings.html",
         name: "Settings"
     },
     {
-        link: "/exit.html",
+        link: "exit.html",
         name: "Exit"
     },
     {
-        link: "/course-adviser.html",
+        link: "course-adviser.html",
         name: "Course Adviser"
     }
 ]
 
 const navUl = document.getElementById("nav-ul")
-const filename = window.location.pathname
+const url = window.location.pathname
+const filename = url.substring(url.lastIndexOf('/') + 1)
+console.log(filename)
 
 function setActiveClass(link) {
     if (link === filename) return `li class="active"`
